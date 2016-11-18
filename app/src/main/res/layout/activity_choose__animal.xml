@@ -44,32 +44,32 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="13dp"
-        android:id="@+id/radioGroup">
+        android:id="@+id/radioAnimal">
         <RadioButton
             android:text="개"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/radioGroup2"
-            android:layout_toRightOf="@+id/radioGroup2"
-            android:layout_toEndOf="@+id/radioGroup2"
+            android:layout_alignTop="@+id/radioAnimal"
+            android:layout_toRightOf="@+id/radioAnimal"
+            android:layout_toEndOf="@+id/radioAnimal"
             android:id="@+id/radioDog" />
 
         <RadioButton
             android:text="고양이"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/radioGroup2"
-            android:layout_toRightOf="@+id/radioGroup2"
-            android:layout_toEndOf="@+id/radioGroup2"
+            android:layout_alignTop="@+id/radioAnimal"
+            android:layout_toRightOf="@+id/radioAnimal"
+            android:layout_toEndOf="@+id/radioAnimal"
             android:id="@+id/radioCat" />
 
         <RadioButton
             android:text="토끼"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/radioGroup2"
-            android:layout_toRightOf="@+id/radioGroup2"
-            android:layout_toEndOf="@+id/radioGroup2"
+            android:layout_alignTop="@+id/radioAnimal"
+            android:layout_toRightOf="@+id/radioAnimal"
+            android:layout_toEndOf="@+id/radioAnimal"
             android:id="@+id/radioBunny" />
 
     </RadioGroup>
@@ -79,7 +79,7 @@
         android:layout_height="200dp"
         app:srcCompat="@drawable/bunny"
         android:id="@+id/imageView"
-        android:layout_below="@+id/radioGroup"
+        android:layout_below="@+id/radioAnimal"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="20dp" />
