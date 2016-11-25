@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_choose__animal"
@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.example.soapmaze.chooseanimal.Choose_Animal">
 
     <TextView
@@ -17,18 +18,14 @@
         android:text="선택을 시작하시렵니까?"
         android:id="@+id/txt_title" />
 
-    <CheckBox
+    <Switch
         android:text="시작"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:id="@+id/chkbox_start"
-        android:layout_below="@+id/txt_title"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="19dp" />
+        android:id="@+id/switch_start" />
 
     <TextView
-        android:text="좋아하는 동물은?"
+        android:text="좋아하는 안드로이드 버젼은?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/chkbox_start"
@@ -44,45 +41,57 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="13dp"
-        android:id="@+id/radioAnimal">
+        android:id="@+id/radioAndroid">
         <RadioButton
-            android:text="개"
+            android:text="젤리빈(4.3)"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/radioAnimal"
-            android:layout_toRightOf="@+id/radioAnimal"
-            android:layout_toEndOf="@+id/radioAnimal"
-            android:id="@+id/radioDog" />
+            android:layout_alignTop="@+id/radioAndroid"
+            android:layout_toRightOf="@+id/radioAndroid"
+            android:layout_toEndOf="@+id/radioAndroid"
+            android:id="@+id/radioJellybean" />
 
         <RadioButton
-            android:text="고양이"
+            android:text="킷캣(4.4)"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/radioAnimal"
-            android:layout_toRightOf="@+id/radioAnimal"
-            android:layout_toEndOf="@+id/radioAnimal"
-            android:id="@+id/radioCat" />
+            android:layout_alignTop="@+id/radioAndroid"
+            android:layout_toRightOf="@+id/radioAndroid"
+            android:layout_toEndOf="@+id/radioAndroid"
+            android:id="@+id/radioKitkat" />
 
         <RadioButton
-            android:text="토끼"
+            android:text="롤리팝(5.0)"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/radioAnimal"
-            android:layout_toRightOf="@+id/radioAnimal"
-            android:layout_toEndOf="@+id/radioAnimal"
-            android:id="@+id/radioBunny" />
+            android:layout_alignTop="@+id/radioAndroid"
+            android:layout_toRightOf="@+id/radioAndroid"
+            android:layout_toEndOf="@+id/radioAndroid"
+            android:id="@+id/radioLollipop" />
 
     </RadioGroup>
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/bunny"
+        android:layout_width="100dp"
+        app:srcCompat="@drawable/jellybean"
         android:id="@+id/imageView"
-        android:layout_below="@+id/radioAnimal"
+        android:layout_below="@+id/radioAndroid"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp" />
+
+    <Button
+        android:text="종료"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_quit" />
+
+    <Button
+        android:text="처음으로"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reset" />
 
 
-</RelativeLayout>
+</LinearLayout>
